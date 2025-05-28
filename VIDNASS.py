@@ -25,8 +25,7 @@ if st.button("🎬 أنشئ الفيديو") and image_file and text_input:
         audio_b64 = base64.b64encode(audio_bytes).decode("utf-8")
 
     with st.spinner("📤 جاري إرسال الطلب إلى D-ID..."):
-        api_key = "bmVsbGFuZXJvMTdAZ21haWwuY29t:UCOl3RVYFJPEojz_UZ_wQ
-"  # <-- هنا نحط المفتاح من حسابي أو حسابك
+        api_key = "bmVsbGFuZXJvMTdAZ21haWwuY29t:UCOl3RVYFJPEojz_UZ_wQ"  # <-- هنا نحط المفتاح من حسابي أو حسابك
         headers = {
             "Authorization": f"Bearer {api_key}",
             "Content-Type": "application/json"
